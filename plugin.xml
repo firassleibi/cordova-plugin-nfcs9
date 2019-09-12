@@ -6,7 +6,7 @@
     <license>Apache 2.0</license>
     <keywords>cordova,nfc,S9-BU-13-00</keywords>
     <js-module src="www/nfc.js" name="nfc">
-        <clobbers target="device" />
+        <clobbers target="NFCS9" />
     </js-module>
     <platform name="android">
       <source-file src="src/android/libs/Reader.jar" target-dir="libs" />
