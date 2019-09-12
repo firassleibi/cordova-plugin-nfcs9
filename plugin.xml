@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-nfcs9" version="0.1">
+    <name>NFC S9</name>
+    <description>Cordova Plugin For S9-BU-13-00 USB NFC Smart Reader Writer</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,nfc,S9-BU-13-00</keywords>
+    <js-module src="www/nfc.js" name="nfc">
+        <clobbers target="device" />
+    </js-module>
+    <platform name="android">
+
+    </platform>
+</plugin>
