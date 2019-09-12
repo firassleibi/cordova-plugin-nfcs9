@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="cordova-plugin-nfcs9" version="0.1">
+           id="cordova-plugin-nfcs9"
+      version="0.1">
     <name>NFC S9</name>
     <description>Cordova Plugin For S9-BU-13-00 USB NFC Smart Reader Writer</description>
     <license>Apache 2.0</license>
     <keywords>cordova,nfc,S9-BU-13-00</keywords>
-    <js-module src="www/nfc.js" name="nfc">
+    <repo>https://github.com/firassleibi/cordova-plugin-nfcs9.git</repo>
+
+
+    <js-module src="www/NFCS9.js" name="NFCS9">
         <clobbers target="NFCS9" />
     </js-module>
-    <platform name="android">
-      <source-file src="src/android/libs/Reader.jar" target-dir="libs" />
 
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="NFCS9">
+                <param name="android-package" value="com.tqniyati.nfc.NFCSPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/NFCSPlugin.java" target-dir="src/com/tqniyati/nfc" />
+        <source-file src="src/android/libs/Reader.jar" target-dir="libs" />
     </platform>
 </plugin>
