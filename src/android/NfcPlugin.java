@@ -8,7 +8,7 @@ import android.util.*;
 
 //import com.getpebble.android.kit.*;
 
-public class NFCSPlugin extends CordovaPlugin {
+public class NfcPlugin extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, final CallbackContext cb) throws JSONException {
 
