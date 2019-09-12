@@ -9,6 +9,7 @@
         <clobbers target="device" />
     </js-module>
     <platform name="android">
+      <source-file src="src/android/libs/Reader.jar" target-dir="libs" />
 
     </platform>
 </plugin>
