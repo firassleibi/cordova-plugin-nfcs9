@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
            id="com.tqniyati.nfc.NfcPlugin"
-      version="0.1">
+      version="0.2.6">
     <name>NFC S9</name>
     <description>Cordova Plugin For S9-BU-13-00 USB NFC Smart Reader Writer</description>
     <license>Apache 2.0</license>
